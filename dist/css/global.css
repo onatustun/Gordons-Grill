@@ -1,0 +1,29 @@
+*::-webkit-scrollbar {
+    width: 0rem;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --black: #1A1A1A;
+    --white: #F2F2F2;
+    --animate-delay: 0.333s; 
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(../home/media/images/1.jpg);
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../home/media/images/2.jpg);
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(../home/media/images/3.jpg);
+}
+
+.carousel-item:nth-child(4) {
+    background-image: url(../home/media/images/4.jpg);
+}
