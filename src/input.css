@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *::-webkit-scrollbar {
+    width: 0rem;
+  }
+
+  * {
+    scrollbar-width: none;
+  }
+
+  :root {
+    --animate-delay: 0.333s;
+  }
+
+  .carousel-item:nth-child(1) {
+    background-image: url(/dist/home/media/images/1.jpg);
+  }
+
+  .carousel-item:nth-child(2) {
+    background-image: url(/dist/home/media/images/2.jpg);
+  }
+
+  .carousel-item:nth-child(3) {
+    background-image: url(/dist/home/media/images/3.jpg);
+  }
+
+  .carousel-item:nth-child(4) {
+    background-image: url(/dist/home/media/images/4.jpg);
+  }
+
+  .placeholder-image {
+    background-image: url(/dist/home/media/images/2.jpg);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gordons-grill",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "tailwind-merge": "^2.5.3"
+  },
+  "keywords": [],
+  "description": ""
+}
