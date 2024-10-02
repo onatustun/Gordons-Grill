@@ -5,7 +5,20 @@ module.exports = {
     extend: {
       colors: {
         'black': '#1A1A1A',
-        'white': '#FBFBFE'
+        'dark-gray': {
+          1: '#292929',
+          2: '#3E3E3E'
+        },
+        'gray': '#8B8B8C',
+
+        'light-gray': {
+          1: '#DFDFE2',
+          2: '#EDEDF0'
+        },
+        'white': '#FBFBFE',
+        'primary': '#823349',
+        'secondary': '#EE8484',
+        'accent': '#A6A58D'
       },
       spacing: {
         '20': '88px',
