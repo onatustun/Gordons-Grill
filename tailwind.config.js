@@ -17,7 +17,10 @@ module.exports = {
       },
       backdropBlur: {
         xs: '2px',
-      }
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   variants: {},
