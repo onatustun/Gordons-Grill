@@ -884,6 +884,10 @@ video {
   text-align: center;
 }
 
+.font-serif {
+  font-family: Quattrocento, serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -914,24 +918,14 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(255 203 105 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(251 251 254 / var(--tw-text-opacity));
-}
-
-.text-primary {
-  --tw-text-opacity: 1;
-  color: rgb(130 51 73 / var(--tw-text-opacity));
-}
-
-.text-accent {
-  --tw-text-opacity: 1;
-  color: rgb(166 165 141 / var(--tw-text-opacity));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(238 132 132 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -994,9 +988,9 @@ video {
   font-weight: 600;
 }
 
-.hover\:text-black:hover {
+.hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(26 26 26 / var(--tw-text-opacity));
+  color: rgb(105 20 14 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1006,11 +1000,6 @@ video {
 
 .hover\:text-white\/75:hover {
   color: rgb(251 251 254 / 0.75);
-}
-
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(130 51 73 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:scale-110 {

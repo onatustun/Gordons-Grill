@@ -16,9 +16,9 @@ module.exports = {
           2: '#EDEDF0'
         },
         'white': '#FBFBFE',
-        'primary': '#823349',
-        'secondary': '#EE8484',
-        'accent': '#A6A58D'
+        'primary': '#69140E',
+        'secondary': '#FFCB69',
+        'accent': '#FE4646'
       },
       spacing: {
         '20': '88px',
@@ -33,6 +33,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
+        serif: ['Quattrocento', 'serif']
       },
     },
   },
