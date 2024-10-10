@@ -703,6 +703,10 @@ video {
   height: 100vh;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -862,6 +866,11 @@ video {
 
 .bg-white\/85 {
   background-color: rgb(251 251 254 / 0.85);
+}
+
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 139 140 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
