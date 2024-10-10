@@ -11,8 +11,8 @@ $(document).ready(() => {
     }
 
     const updatePagination = (index) => {
-        $('.carousel-pagination').removeClass('opacity-85 grow').addClass('opacity-50')
-            .eq(index).removeClass('opacity-50').addClass('opacity-85 grow')
+        $('.carousel-pagination').removeClass('bg-white/85 grow').addClass('bg-white/50')
+            .eq(index).removeClass('bg-white/50').addClass('bg-white/85 grow')
     }
 
     const navigateSlide = (direction) => {

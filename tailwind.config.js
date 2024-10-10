@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/home/*.{html,js}"],
+  content: [
+    './dist/home/*.{html,js}',
+    './dist/home/js/*.{html,js}',
+    './dist/js/*.{html,js}'
+  ],
   theme: {
     extend: {
       colors: {
@@ -38,5 +42,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: ['prettier-plugin-tailwindcss'],
 }

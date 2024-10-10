@@ -1,14 +1,16 @@
 $(document).ready(() => {
-    let prevScrollPos = $(window).scrollTop()
-    const navbar = $("nav")
+    let prevScrollPos = $(window).scrollTop();
+    const navbar = $("nav");
+    const navbg = $(".navbg");
 
     $(window).on('scroll', () => {
-        const currentScrollPos = $(this).scrollTop()
+        const currentScrollPos = $(window).scrollTop();
 
-        navbar.css('top', prevScrollPos > currentScrollPos ? '0' : '-6.5rem')
+        navbar.css('top', prevScrollPos > currentScrollPos ? '0' : '-6.5rem');
 
-        navbar.toggleClass("bg-gradient-to-r from-black to-dark-gray-1", currentScrollPos > $(window).height() - 88)
+        navbg.toggleClass('opacity-100', currentScrollPos > $(window).height() - 88);
+        navbg.toggleClass('opacity-0', currentScrollPos <= $(window).height() - 88);
 
-        prevScrollPos = currentScrollPos
-    })
-})
+        prevScrollPos = currentScrollPos;
+    });
+});
