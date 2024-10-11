@@ -40,6 +40,9 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Quattrocento', 'serif']
       },
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
     },
   },
   variants: {},

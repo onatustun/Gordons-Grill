@@ -52,7 +52,9 @@
   </head>
 
   <body class="overflow-x-hidden">
-    <nav class="fixed top-0 z-50 flex h-20 w-full justify-center duration-300">
+    <nav
+      class="fixed top-0 z-50 flex h-20 w-screen justify-center duration-300"
+    >
       <div class="absolute z-50 flex h-full w-full justify-center">
         <div
           class="flex w-full max-w-6xl items-center justify-between px-6 py-7"
@@ -171,6 +173,42 @@
       >
       Out Now!
     </p>
-    <section class="flex h-96 w-full justify-center bg-white"></section>
+    <section class="flex w-screen items-center justify-center bg-white">
+      <div class="flex h-full w-full max-w-7xl flex-col px-8 py-12">
+        <h1
+          class="font-regular p-5 text-center text-3xl tracking-wide md:text-left md:text-4xl lg:text-5xl"
+        >
+          About Us
+        </h1>
+        <div
+          class="flex h-full w-full flex-col justify-start md:flex-row md:justify-between"
+        >
+          <div class="flex w-full flex-col p-5 md:w-1/2">
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, esse excepturi a quas ipsam neque, autem impedit
+              nesciunt distinctio sunt ducimus. Aspernatur quod amet, id
+              similique est nihil explicabo unde!
+            </p>
+            <p class="mt-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, esse excepturi a quas ipsam neque, autem impedit
+              nesciunt distinctio sunt ducimus. Aspernatur quod amet, id
+              similique est nihil explicabo unde!
+            </p>
+          </div>
+          <div
+            class="relative flex w-full flex-col items-center justify-center p-5 md:w-2/5"
+          >
+            <a
+              href="#"
+              class="z-50 mb-5 flex h-10 w-32 items-center justify-center rounded bg-primary p-4 text-white md:absolute md:top-1/2"
+              >Our Menu</a
+            >
+            <div class="aspect-3/4 w-full bg-black md:w-3/4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
