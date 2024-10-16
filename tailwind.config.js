@@ -31,7 +31,8 @@ module.exports = {
         '1.5': '5px'
       },
       maxWidth: {
-        '34': '8.5rem'
+        '34': '8.5rem',
+        '3/4': '3 / 4',
       },
       backdropBlur: {
         xs: '2px',
@@ -43,6 +44,9 @@ module.exports = {
       aspectRatio: {
         '3/4': '3 / 4',
       },
+      transitionProperty: {
+        'top': 'top',
+      }
     },
   },
   variants: {},

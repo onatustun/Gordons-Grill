@@ -53,7 +53,7 @@
 
   <body class="overflow-x-hidden">
     <nav
-      class="fixed top-0 z-50 flex h-20 w-screen justify-center duration-300"
+      class="transition-top fixed top-0 z-50 flex h-20 w-screen justify-center duration-300"
     >
       <div class="absolute z-50 flex h-full w-full justify-center">
         <div
@@ -69,21 +69,21 @@
 
           <div>
             <div
-              class="hidden space-x-8 p-1 text-white duration-100 hover:text-white/75 md:block"
+              class="hidden space-x-8 p-1 text-white transition-colors duration-100 hover:text-white/75 md:block"
             >
               <a
                 href="#"
-                class="p-1.5 font-semibold duration-100 hover:text-white"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
                 >About Us</a
               >
               <a
                 href="#"
-                class="p-1.5 font-semibold duration-100 hover:text-white"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
                 >Menu</a
               >
               <a
                 href="#"
-                class="p-1.5 font-semibold duration-100 hover:text-white"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
                 >Contact Us</a
               >
             </div>
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div
-        class="navBg absolute z-0 h-full w-full bg-gradient-to-r from-black to-dark-gray-1 opacity-0 duration-300"
+        class="navBg absolute z-0 h-full w-full bg-gradient-to-r from-black to-dark-gray-1 opacity-0 transition-opacity duration-300"
       ></div>
     </nav>
     <section class="flex h-screen w-full justify-center shadow-inner">
@@ -105,14 +105,14 @@
         class="next group absolute bottom-1/3 right-0 z-20 hidden h-1/3 w-32 items-center justify-center md:flex"
       >
         <span
-          class="block aspect-square w-8 rotate-45 rounded border-r-4 border-t-4 border-white/50 duration-200 group-hover:scale-110 group-hover:border-white/100 lg:w-10"
+          class="block aspect-square w-8 rotate-45 rounded border-r-4 border-t-4 border-white/50 transition-all duration-200 group-hover:scale-110 group-hover:border-white/100 lg:w-10"
         ></span>
       </button>
       <button
         class="prev group absolute bottom-1/3 left-0 z-20 hidden h-1/3 w-32 items-center justify-center md:flex"
       >
         <span
-          class="block aspect-square w-8 rotate-45 rounded border-b-4 border-l-4 border-white/50 duration-200 group-hover:scale-110 group-hover:border-white/100 lg:w-10"
+          class="block aspect-square w-8 rotate-45 rounded border-b-4 border-l-4 border-white/50 transition-all duration-200 group-hover:scale-110 group-hover:border-white/100 lg:w-10"
         ></span>
       </button>
 
@@ -133,7 +133,7 @@
 
         <a
           href="#"
-          class="relative mt-10 flex h-12 w-32 items-center justify-center rounded-full border-2 border-solid border-white tracking-wide text-white shadow-lg backdrop-blur-xs duration-300 hover:border-white hover:bg-white hover:font-semibold hover:text-primary"
+          class="relative mt-10 flex h-12 w-32 items-center justify-center rounded-full border-2 border-solid border-white tracking-wide text-white shadow-lg backdrop-blur-xs transition-all duration-300 hover:border-white hover:bg-white hover:font-semibold hover:text-primary"
           >Book Now</a
         >
       </div>
@@ -142,20 +142,22 @@
         class="absolute bottom-24 z-20 hidden h-fit w-full max-w-34 justify-around space-x-5 md:flex"
       >
         <span
-          class="carousel-pagination | block aspect-square h-3 grow rounded-full bg-white/85 duration-300"
+          class="carousel-pagination | block aspect-square h-3 grow rounded-full bg-white/85 transition-all duration-300"
         ></span>
         <span
-          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 duration-300"
+          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 transition-all duration-300"
         ></span>
         <span
-          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 duration-300"
+          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 transition-all duration-300"
         ></span>
         <span
-          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 duration-300"
+          class="carousel-pagination | block aspect-square h-3 rounded-full bg-white/50 transition-all duration-300"
         ></span>
       </div>
 
-      <div class="carousel-container z-10 flex w-full duration-500">
+      <div
+        class="carousel-container z-10 flex w-full transition-all duration-500"
+      >
         <div class="carousel-item | h-full min-w-full bg-cover bg-center"></div>
         <div class="carousel-item | h-full min-w-full bg-cover bg-center"></div>
         <div class="carousel-item | h-full min-w-full bg-cover bg-center"></div>
@@ -174,7 +176,7 @@
       Out Now!
     </p>
     <section class="flex w-screen items-center justify-center bg-white">
-      <div class="flex h-full w-full max-w-7xl flex-col px-8 py-12">
+      <div class="flex h-full w-full max-w-7xl flex-col px-4 py-12 md:px-8">
         <h1
           class="font-regular p-5 text-center text-3xl tracking-wide md:text-left md:text-4xl lg:text-5xl"
         >
@@ -189,15 +191,12 @@
               ea consequat non. Aliquip consequat aliquip duis ex tempor ad non
               do fugiat id. Et eiusmod est nulla qui occaecat sit sunt aliqua
               laboris aliqua irure. Non sunt aliquip sit fugiat duis irure elit
-              velit nulla. Enim minim quis ad duis elit. Anim commodo duis
-              laboris et cupidatat laborum elit mollit proident fugiat pariatur
-              quis.
+              velit nulla. Enim minim quis ad duis elit. quis.
             </p>
             <p class="mt-16">
               Adipisicing ex elit tempor est reprehenderit dolore. Dolor eu
               reprehenderit commodo voluptate et consequat sit aliqua voluptate.
-              Elit cillum consequat cupidatat tempor. Sit velit ipsum quis
-              nostrud adipisicing amet irure amet laboris reprehenderit ut.
+              Elit cillum consequat cupidatat tempor.
             </p>
           </div>
           <div
@@ -208,7 +207,9 @@
               class="z-50 mb-5 flex h-10 w-32 items-center justify-center rounded bg-primary p-4 text-white md:absolute md:top-1/2"
               >Our Menu</a
             >
-            <div class="aspect-3/4 w-full bg-black md:w-3/4"></div>
+            <div
+              class="aspect-3/4 w-full max-w-md bg-black md:min-w-40 md:max-w-xs"
+            ></div>
           </div>
         </div>
       </div>
