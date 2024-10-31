@@ -8,7 +8,7 @@ $(document).ready(() => {
     $(window).on('scroll', () => {
         const currentScrollPos = $(window).scrollTop()
 
-        navbar.css('top', prevScrollPos > currentScrollPos ? '0' : '-6.5rem')
+        navbar.toggleClass('top-0', prevScrollPos > currentScrollPos).toggleClass('-top-26', !(prevScrollPos > currentScrollPos))
 
         navbar.toggleClass('bg-black', currentScrollPos > $(window).height() - 88)
 
@@ -17,6 +17,7 @@ $(document).ready(() => {
 
     hamburger.on("click", () => {
         const currentScrollPos = $(window).scrollTop()
+
         if (curtainOpen) {
             navbar.removeClass('h-screen')
             if (currentScrollPos < $(window).height() - 88) {
@@ -26,12 +27,21 @@ $(document).ready(() => {
             navbar.addClass('bg-black h-screen')
         }
 
-        if ($(window).width() <= 1024 && navbar.hasClass('h-screen')) {
-            body.addClass('overflow-y-hidden')
-        } else {
-            body.removeClass('overflow-y-hidden')
-        }
+        body.toggleClass('overflow-y-hidden', $(window).width() < 768 && navbar.hasClass('h-screen'))
 
         curtainOpen = !curtainOpen
+    })
+
+    $(window).on('resize', () => {
+        const currentScrollPos = $(window).scrollTop()
+
+        if ($(window).width() >= 768 && curtainOpen) {
+            navbar.removeClass('h-screen')
+            if (currentScrollPos < $(window).height() - 88) {
+                navbar.removeClass('bg-black')
+            }
+            body.removeClass('overflow-y-hidden')
+            curtainOpen = false
+        }
     })
 })
