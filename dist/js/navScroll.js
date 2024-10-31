@@ -8,8 +8,8 @@ $(document).ready(() => {
 
         navbar.css('top', prevScrollPos > currentScrollPos ? '0' : '-6.5rem')
 
-        navBg.toggleClass('opacity-100', currentScrollPos > $(window).height() - 88)
-        navBg.toggleClass('opacity-0', currentScrollPos <= $(window).height() - 88)
+        navbar.toggleClass('bg-black', currentScrollPos > $(window).height() - 88)
+        navbar.toggleClass('bg-none', currentScrollPos <= $(window).height() - 88)
 
         prevScrollPos = currentScrollPos
     })
