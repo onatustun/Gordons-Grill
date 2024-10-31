@@ -27,11 +27,11 @@ const renderCalendar = (date) => {
         }).appendTo(weekdaysGrid)
     })
 
-    for (let i = 0; i < startDay; i++) {
+    for (i = 0; i < startDay; i++) {
         dayGrid.append("<div></div>")
     }
 
-    for (let day = 1; day <= daysInMonth; day++) {
+    for (day = 1; day <= daysInMonth; day++) {
         const dayCell = $("<div>", {
             class: "flex items-center justify-center aspect-square cursor-pointer w-10 rounded-full hover:bg-accent/10 hover:text-accent",
             text: day,
@@ -78,7 +78,7 @@ $("#book-submit").on("click", (e) => {
         const endTime = $("#end-time").val()
         const email = $("#book-email").val()
         const name = $("#name").val()
-        const quantity = $("#table-quantity").val()
+        const bookQuantity = $("#table-quantity").val()
 
         const bookingDetails = {
             date: activeDate ? activeDate.format("MMMM D, YYYY") : null,
@@ -94,6 +94,17 @@ $("#book-submit").on("click", (e) => {
     } else {
         alert("Please fill out the booking form first.")
     }
+})
+
+$('#table-quantity').on('input', (e) => {
+    const input = $(e.currentTarget)
+    let value = input.val().replace(/[^1-9]/g, '')
+
+    if (parseInt(value, 10) > 20) {
+        value = '20'
+    }
+
+    input.val(value)
 })
 
 prevMonth.on("click", () => {
