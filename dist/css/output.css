@@ -801,7 +801,7 @@ video {
 }
 
 .w-34 {
-  width: 8.5rem;
+  width: 136px;
 }
 
 .w-4 {
@@ -1379,13 +1379,13 @@ video {
   background-color: rgb(251 251 254 / var(--tw-bg-opacity));
 }
 
-.hover\:text-xl:hover {
-  font-size: 1.25rem;
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.hover\:text-lg:hover {
-  font-size: 1.125rem;
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
