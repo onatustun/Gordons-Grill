@@ -800,6 +800,10 @@ video {
   width: 8rem;
 }
 
+.w-34 {
+  width: 8.5rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1348,6 +1352,10 @@ video {
   transition-duration: 500ms;
 }
 
+.hover\:w-36:hover {
+  width: 9rem;
+}
+
 .hover\:rounded-md:hover {
   border-radius: 0.375rem;
 }
@@ -1373,6 +1381,11 @@ video {
 
 .hover\:text-xl:hover {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
