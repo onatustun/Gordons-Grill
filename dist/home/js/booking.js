@@ -94,7 +94,7 @@ $(document).ready(() => {
         quantity: bookQuantity,
       };
 
-      console.log(bookingDetails);
+      emailjs.send("service_9abbw7m", "template_3iodd3e", bookingDetails);
       alert(
         "We have received your booking and you will get an email about the details.",
       );
