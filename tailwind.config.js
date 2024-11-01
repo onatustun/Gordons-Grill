@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./dist/home/*.{html,js}",
     "./dist/home/js/*.{html,js}",
+    "./dist/abput-us/*.{html,js}",
+    "./dist/abput-us/js/*.{html,js}",
     "./dist/js/*.{html,js}",
   ],
   theme: {
