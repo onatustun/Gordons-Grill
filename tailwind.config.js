@@ -3,8 +3,8 @@ module.exports = {
   content: [
     "./dist/home/*.{html,js}",
     "./dist/home/js/*.{html,js}",
-    "./dist/abput-us/*.{html,js}",
-    "./dist/abput-us/js/*.{html,js}",
+    "./dist/about-us/*.{html,js}",
+    "./dist/about-us/js/*.{html,js}",
     "./dist/js/*.{html,js}",
   ],
   theme: {
@@ -46,6 +46,7 @@ module.exports = {
       aspectRatio: {
         "3/4": "3 / 4",
         "3/5": "3 / 5",
+        "5/4": "5 / 4",
       },
     },
   },
