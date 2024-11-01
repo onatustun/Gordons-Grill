@@ -40,7 +40,8 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <nav class="fixed top-0 z-50 flex h-20 w-screen justify-center transition-all duration-300">
+  <nav
+    class="fixed top-0 z-50 flex flex-col h-20 w-screen overflow-y-hidden justify-between items-center transition-all duration-300">
     <div class="absolute z-50 flex h-full max-h-20 w-full justify-center">
       <div class="flex w-full max-w-6xl items-center justify-between px-6 py-7">
         <a href="#" class="flex p-2">
@@ -70,6 +71,18 @@
           </button>
         </div>
       </div>
+    </div>
+    <div
+      class="curtain-content | absolute invisible top-1/3 flex flex-col space-y-8 text-white transition-colors duration-100 hover:text-white/75 text-xl">
+      <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
+        About Us
+      </a>
+      <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
+        Menu
+      </a>
+      <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
+        Contact Us
+      </a>
     </div>
   </nav>
 
