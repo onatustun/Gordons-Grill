@@ -22,6 +22,7 @@ module.exports = {
           1: "#EDEDF0",
         },
         white: "#FBFBFE",
+        pureWhite: "#FFFFFF",
         primary: "#69140E",
         secondary: "#FFCB69",
         accent: "#FE4646",
