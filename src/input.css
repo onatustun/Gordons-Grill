@@ -34,4 +34,12 @@
   .about-us-image {
     background-image: url(/dist/home/media/images/5.jpg);
   }
+
+  .about-us-hero {
+    background-image: url(/dist/about-us/media/images/tradition-bg.jpg);
+  }
+
+  .tradition {
+    background-image: url(/dist/about-us/media/images/about-us-tradition.jpg);
+  }
 }

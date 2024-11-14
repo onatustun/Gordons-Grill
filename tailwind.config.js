@@ -27,17 +27,23 @@ module.exports = {
         accent: "#FE4646",
       },
       spacing: {
-        20: "88px",
-        26: "104px",
-        34: "136px",
-        1.5: "5px",
+        20: "5.5rem",
+        26: "6.5rem",
+        34: "8.5rem",
+        1.5: "0.313rem",
+      },
+      borderRadius: {
+        "4xl": "2rem",
       },
       maxWidth: {
         34: "8.5rem",
         "3/4": "3 / 4",
       },
       backdropBlur: {
-        xs: "2px",
+        xs: "0.125rem",
+      },
+      blur: {
+        "1.5xl": "2rem",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -47,6 +53,14 @@ module.exports = {
         "3/4": "3 / 4",
         "3/5": "3 / 5",
         "5/4": "5 / 4",
+      },
+      fontSize: {
+        "1.5xl": "1.375rem",
+        "2.5xl": "1.688rem",
+      },
+      margin: {
+        6.5: "1.625rem",
+        4.5: "1.125rem",
       },
     },
   },
