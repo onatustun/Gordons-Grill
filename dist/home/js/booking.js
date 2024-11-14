@@ -84,20 +84,23 @@ $(document).ready(() => {
       const email = $("#book-email").val();
       const name = $("#name").val();
       const bookQuantity = $("#table-quantity").val();
+      if (startTime < endTime) {
+        const bookingDetails = {
+          date: activeDate ? activeDate.format("MMMM D, YYYY") : null,
+          startTime: startTime,
+          endTime: endTime,
+          email: email,
+          name: name,
+          quantity: bookQuantity,
+        };
 
-      const bookingDetails = {
-        date: activeDate ? activeDate.format("MMMM D, YYYY") : null,
-        startTime: startTime,
-        endTime: endTime,
-        email: email,
-        name: name,
-        quantity: bookQuantity,
-      };
-
-      emailjs.send("service_9abbw7m", "template_3iodd3e", bookingDetails);
-      alert(
-        "We have received your booking and you will get an email about the details.",
-      );
+        emailjs.send("service_9abbw7m", "template_3iodd3e", bookingDetails);
+        alert(
+          "We have received your booking and you will get an email about the details.",
+        );
+      } else {
+        alert("Please ensure that the start time is less than the end time.");
+      }
     } else {
       alert("Please fill out the booking form first.");
     }
