@@ -42,4 +42,24 @@
   .tradition {
     background-image: url(/dist/about-us/media/images/about-us-tradition.jpg);
   }
+
+  .gordon {
+    background-image: url(/dist/about-us/media/images/team/gordon.jpg);
+  }
+
+  .shelly {
+    background-image: url(/dist/about-us/media/images/team/shelly.jpg);
+  }
+
+  .rachael {
+    background-image: url(/dist/about-us/media/images/team/rachael.jpg);
+  }
+
+  .angus {
+    background-image: url(/dist/about-us/media/images/team/angus.jpg);
+  }
+
+  .values {
+    background-image: url(/dist/about-us/media/images/values.jpg);
+  }
 }

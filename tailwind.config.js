@@ -38,6 +38,7 @@ module.exports = {
       maxWidth: {
         34: "8.5rem",
         "3/4": "3 / 4",
+        "3.5xl": "52rem",
       },
       backdropBlur: {
         xs: "0.125rem",
@@ -55,8 +56,8 @@ module.exports = {
         "5/4": "5 / 4",
       },
       fontSize: {
-        "1.5xl": "1.375rem",
         "2.5xl": "1.688rem",
+        "3.5xl": "2rem",
       },
       margin: {
         6.5: "1.625rem",
