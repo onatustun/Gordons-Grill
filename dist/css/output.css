@@ -1261,12 +1261,12 @@ video {
   text-align: center;
 }
 
-.font-serif {
-  font-family: Quattrocento, serif;
-}
-
 .font-sans {
   font-family: Montserrat, sans-serif;
+}
+
+.font-serif {
+  font-family: Quattrocento, serif;
 }
 
 .text-3xl {
