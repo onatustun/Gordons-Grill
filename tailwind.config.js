@@ -5,12 +5,15 @@ module.exports = {
     "./dist/home/js/*.{html,js}",
     "./dist/about-us/*.{html,js}",
     "./dist/about-us/js/*.{html,js}",
+    "./dist/contact-us/*.{html,js}",
+    "./dist/contact-us/js/*.{html,js}",
     "./dist/js/*.{html,js}",
   ],
   theme: {
     extend: {
       colors: {
         black: "#1A1A1A",
+        pureBlack: "#111111",
         "dark-gray": {
           1: "#292929",
           2: "#3E3E3E",

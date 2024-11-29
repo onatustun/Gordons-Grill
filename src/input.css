@@ -62,4 +62,8 @@
   .values {
     background-image: url(/dist/about-us/media/images/values.jpg);
   }
+
+  .contact-us-hero {
+    background-image: url(/dist/contact-us/media/location-hero.jpg);
+  }
 }
