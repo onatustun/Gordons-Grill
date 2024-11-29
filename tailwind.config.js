@@ -5,6 +5,8 @@ module.exports = {
     "./dist/home/js/*.{html,js}",
     "./dist/about-us/*.{html,js}",
     "./dist/about-us/js/*.{html,js}",
+    "./dist/contact-us/*.{html,js}",
+    "./dist/contact-us/js/*.{html,js}",
     "./dist/js/*.{html,js}",
   ],
   theme: {
