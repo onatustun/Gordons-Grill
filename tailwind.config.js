@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#1A1A1A",
+        pureBlack: "#111111",
         "dark-gray": {
           1: "#292929",
           2: "#3E3E3E",
