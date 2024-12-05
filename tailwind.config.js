@@ -7,6 +7,8 @@ module.exports = {
     "./dist/about-us/js/*.{html,js}",
     "./dist/contact-us/*.{html,js}",
     "./dist/contact-us/js/*.{html,js}",
+    "./dist/menu/*.{html,js}",
+    "./dist/menu/js/*.{html,js}",
     "./dist/js/*.{html,js}",
   ],
   theme: {
@@ -36,6 +38,7 @@ module.exports = {
         34: "8.5rem",
         1.5: "0.313rem",
         104: "26rem",
+        "7%": "7%"
       },
       borderRadius: {
         "4xl": "2rem",

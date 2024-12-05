@@ -1,331 +1,471 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gordon's Grill | Contact Us</title>
 
-  <title>Gordon's Grill | Contact Us</title>
+    <link
+      rel="icon"
+      href="../media/icons/brand-logo-light.svg"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="../media/icons/brand-logo-dark.svg"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: dark)"
+    />
 
-  <link rel="icon" href="../media/icons/brand-logo-light.svg" type="image/svg+xml"
-    media="(prefers-color-scheme: light)" />
-  <link rel="icon" href="../media/icons/brand-logo-dark.svg" type="image/svg+xml"
-    media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="../css/output.css" rel="stylesheet" />
 
-  <link href="../css/output.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/plugin/localeData.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/plugin/localeData.min.js"></script>
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script defer src="../js/init.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="../js/navigation.js"></script>
+    <script defer src="js/faq.js"></script>
+    <script defer src="js/contactForm.js"></script>
+  </head>
 
-  <script defer src="../js/navigation.js"></script>
-  <script defer src="js/faq.js"></script>
-  <script defer src="js/contactForm.js"></script>
-</head>
+  <body class="overflow-x-hidden">
+    <nav
+      class="fixed top-0 z-50 flex h-20 w-screen flex-col items-center justify-between overflow-y-hidden transition-all duration-300"
+    >
+      <div class="absolute z-50 flex h-full max-h-20 w-full justify-center">
+        <div
+          class="flex w-full max-w-6xl items-center justify-between px-6 py-7"
+        >
+          <a href="../home/index.html" class="flex p-2">
+            <svg class="-mt-0.5 h-11 fill-white" viewBox="0 0 797.43 647.04">
+              <path
+                d="M786.41,48.16c-4.05-9.1-12.5-27.44-31.74-38.77-15.85-9.34-36.4-11.45-38.22-7.42-.73,1.61,1.81,3.59,8.29,11.6,0,0,1.67,2.07,12.81,17.49,9.1,12.6,12.29,50.22-5.7,77.58-17.1,25.99-45.29,32.98-74.78,40.3-17.88,4.44-61.82,14.81-116.33,2.49-48.23-10.9-71.31-32.02-114.02-23.62-12.27,2.41-21.91,6.42-28.01,9.36-6.11-2.94-15.74-6.95-28.01-9.36-42.71-8.39-65.79,12.72-114.02,23.62-54.51,12.32-98.44,1.95-116.33-2.49-29.49-7.32-57.68-14.31-74.78-40.3-17.86-27.15-15.36-64.98-5.7-77.58,4.53-5.92,8.74-12.07,13.41-17.87,6.29-7.82,8.39-9.69,7.69-11.22-1.9-4.12-22.49-1.86-38.22,7.42-19.24,11.34-27.69,29.68-31.74,38.77-13.02,29.25-17.43,72.43,3.21,110.69,17.08,31.64,44.01,46.41,64.46,57.62,10.21,5.6,31.46,16.99,61.04,21.11,31.76,4.42,55.66-1.99,56.47,1.71.73,3.34-18.97,7.17-45.09,22.4-36.51,21.29-47.25,42.52-50.18,48.9-1.58,3.45-10.93,23.84-3.99,30.23,5.55,5.12,15.53-4.26,37.08-7.42,27.47-4.03,32.76,8.05,53.62,1.76,20.88-6.29,33.63-23.83,35.37-26.29,9.58-13.54,10.22-25.39,13.69-25.1,3.31.28,5.15,11.25,8.56,43.92,4.65,44.6,3.49,45.98,6.28,57.05,4.43,17.59,9.22,21.48,25.1,53.05,16.69,33.18,25.04,49.77,27.27,60.91,9.47,47.26-20.01,68.42-2.74,104.52,2.21,4.63,9.38,19.61,25.1,29.09,10.69,6.45,19.55,8.58,35.37,11.41,29.54,5.29,55,3.43,74.15,0,15.81-2.83,24.68-4.96,35.37-11.41,15.72-9.48,22.89-24.47,25.1-29.09,17.27-36.09-12.2-57.26-2.74-104.52,2.23-11.15,10.58-27.74,27.27-60.91,15.88-31.57,20.67-35.46,25.1-53.05,2.78-11.06,1.62-12.44,6.28-57.05,3.41-32.68,5.25-43.65,8.56-43.92,3.47-.29,4.11,11.56,13.69,25.1,1.74,2.46,14.49,20,35.37,26.29,20.86,6.29,26.15-5.79,53.62-1.76,21.55,3.16,31.53,12.53,37.08,7.42,6.94-6.4-2.41-26.79-3.99-30.23-2.93-6.39-13.67-27.61-50.18-48.9-26.12-15.23-45.82-19.06-45.09-22.4.81-3.71,24.71,2.7,56.47-1.71,29.58-4.11,50.83-15.51,61.04-21.11,20.45-11.21,47.38-25.97,64.46-57.62,20.64-38.25,16.23-81.43,3.21-110.69Z"
+              />
+            </svg>
+          </a>
 
-<body class="overflow-x-hidden">
-  <nav
-    class="fixed top-0 z-50 flex h-20 w-screen flex-col items-center justify-between overflow-y-hidden transition-all duration-300">
-    <div class="absolute z-50 flex h-full max-h-20 w-full justify-center">
-      <div class="flex w-full max-w-6xl items-center justify-between px-6 py-7">
-        <a href="../home/index.html" class="flex p-2">
-          <svg class="-mt-0.5 h-11 fill-white" viewBox="0 0 797.43 647.04">
-            <path
-              d="M786.41,48.16c-4.05-9.1-12.5-27.44-31.74-38.77-15.85-9.34-36.4-11.45-38.22-7.42-.73,1.61,1.81,3.59,8.29,11.6,0,0,1.67,2.07,12.81,17.49,9.1,12.6,12.29,50.22-5.7,77.58-17.1,25.99-45.29,32.98-74.78,40.3-17.88,4.44-61.82,14.81-116.33,2.49-48.23-10.9-71.31-32.02-114.02-23.62-12.27,2.41-21.91,6.42-28.01,9.36-6.11-2.94-15.74-6.95-28.01-9.36-42.71-8.39-65.79,12.72-114.02,23.62-54.51,12.32-98.44,1.95-116.33-2.49-29.49-7.32-57.68-14.31-74.78-40.3-17.86-27.15-15.36-64.98-5.7-77.58,4.53-5.92,8.74-12.07,13.41-17.87,6.29-7.82,8.39-9.69,7.69-11.22-1.9-4.12-22.49-1.86-38.22,7.42-19.24,11.34-27.69,29.68-31.74,38.77-13.02,29.25-17.43,72.43,3.21,110.69,17.08,31.64,44.01,46.41,64.46,57.62,10.21,5.6,31.46,16.99,61.04,21.11,31.76,4.42,55.66-1.99,56.47,1.71.73,3.34-18.97,7.17-45.09,22.4-36.51,21.29-47.25,42.52-50.18,48.9-1.58,3.45-10.93,23.84-3.99,30.23,5.55,5.12,15.53-4.26,37.08-7.42,27.47-4.03,32.76,8.05,53.62,1.76,20.88-6.29,33.63-23.83,35.37-26.29,9.58-13.54,10.22-25.39,13.69-25.1,3.31.28,5.15,11.25,8.56,43.92,4.65,44.6,3.49,45.98,6.28,57.05,4.43,17.59,9.22,21.48,25.1,53.05,16.69,33.18,25.04,49.77,27.27,60.91,9.47,47.26-20.01,68.42-2.74,104.52,2.21,4.63,9.38,19.61,25.1,29.09,10.69,6.45,19.55,8.58,35.37,11.41,29.54,5.29,55,3.43,74.15,0,15.81-2.83,24.68-4.96,35.37-11.41,15.72-9.48,22.89-24.47,25.1-29.09,17.27-36.09-12.2-57.26-2.74-104.52,2.23-11.15,10.58-27.74,27.27-60.91,15.88-31.57,20.67-35.46,25.1-53.05,2.78-11.06,1.62-12.44,6.28-57.05,3.41-32.68,5.25-43.65,8.56-43.92,3.47-.29,4.11,11.56,13.69,25.1,1.74,2.46,14.49,20,35.37,26.29,20.86,6.29,26.15-5.79,53.62-1.76,21.55,3.16,31.53,12.53,37.08,7.42,6.94-6.4-2.41-26.79-3.99-30.23-2.93-6.39-13.67-27.61-50.18-48.9-26.12-15.23-45.82-19.06-45.09-22.4.81-3.71,24.71,2.7,56.47-1.71,29.58-4.11,50.83-15.51,61.04-21.11,20.45-11.21,47.38-25.97,64.46-57.62,20.64-38.25,16.23-81.43,3.21-110.69Z" />
-          </svg>
+          <div>
+            <div
+              class="hidden space-x-8 p-1 text-white transition-colors duration-100 hover:text-white/75 md:block"
+            >
+              <a
+                href="../about-us/about-us.html"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+              >
+                About Us
+              </a>
+              <a
+                href="../menu/menu.html"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+              >
+                Menu
+              </a>
+              <a
+                href="#"
+                class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            <button class="hamburger | relative space-y-2 p-2 md:hidden">
+              <span
+                class="duration-250 block h-0.5 w-7 bg-white transition-all"
+              ></span>
+              <span class="block h-0.5 w-7 bg-white"></span>
+              <span
+                class="duration-250 block h-0.5 w-7 bg-white transition-all"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="curtain-content | invisible absolute top-1/3 flex flex-col space-y-8 text-xl text-white transition-colors duration-100 hover:text-white/75"
+      >
+        <a
+          href="../about-us/about-us.html"
+          class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+        >
+          About Us
         </a>
+        <a
+          href="../menu/menu.html"
+          class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+        >
+          Menu
+        </a>
+        <a
+          href="#"
+          class="p-1.5 font-semibold transition-colors duration-100 hover:text-white"
+        >
+          Contact Us
+        </a>
+      </div>
+    </nav>
 
-        <div>
-          <div class="hidden space-x-8 p-1 text-white transition-colors duration-100 hover:text-white/75 md:block">
-            <a href="../about-us/about-us.html"
-              class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
+    <section
+      class="contact-us-hero | flex h-screen w-full justify-center bg-cover bg-center"
+    >
+      <a
+        href="#contact-form"
+        class="absolute bottom-52 flex h-16 w-16 items-center justify-center rounded-2xl bg-black text-white shadow-xl md:bottom-60"
+      >
+        <i class="fa-solid fa-arrow-down fa-xl"></i>
+      </a>
+      <div
+        class="absolute bottom-0 flex h-32 w-full flex-col items-center justify-between bg-black py-7 md:h-40 md:py-9"
+      >
+        <h3 class="font-serif text-xl tracking-wide text-white md:text-3xl">
+          Gordon’s Grill
+        </h3>
+        <h1
+          class="text-3xl font-light tracking-widest text-secondary md:text-5xl"
+        >
+          Get in touch
+        </h1>
+      </div>
+    </section>
+
+    <div
+      id="contact-form"
+      class="relative flex w-screen items-center justify-center overflow-hidden bg-white"
+    >
+      <div
+        class="z-10 flex h-full w-full max-w-7xl flex-col items-center px-4 py-12 md:px-8"
+      >
+        <form class="h-full w-full max-w-72">
+          <input
+            type="text"
+            id="contact-fname"
+            class="block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="contact-lname"
+            class="mt-6 block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            id="contact-email"
+            class="mt-6 block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
+            placeholder="example@domain.com"
+            required
+          />
+          <textarea
+            id="contact-content"
+            class="mt-6 block max-h-52 min-h-52 w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
+            rows="8"
+            placeholder="..."
+            required
+          ></textarea>
+          <button
+            id="contact-submit"
+            class="mt-6 h-9 w-28 rounded-lg bg-secondary"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <svg
+        class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          class="fill-light-gray-1"
+          d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,90.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <div
+      class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-light-gray-1"
+    >
+      <div
+        class="z-10 flex h-full w-full max-w-80 flex-col gap-6 px-4 py-12 md:max-w-2xl md:flex-row md:py-32"
+      >
+        <iframe
+          class="aspect-5/4 w-full rounded-2xl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2164.126765321121!2d-2.1028299225333833!3d57.15198997363413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48840e17e7a14d39%3A0x39654090a0587f05!2sNorth%20East%20Scotland%20College!5e0!3m2!1sen!2suk!4v1732886504612!5m2!1sen!2suk"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div
+          class="flex h-min w-full max-w-36 flex-col gap-6 rounded-xl bg-black p-1.5 text-white"
+        >
+          <ul>
+            <li>Address</li>
+            <li>Suburb</li>
+            <li>City, Country</li>
+            <li>Postcode</li>
+          </ul>
+          <ul>
+            <li>Email</li>
+            <li>Phone Number</li>
+          </ul>
+        </div>
+      </div>
+
+      <svg
+        class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          class="fill-light-gray-2"
+          d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,90.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <div
+      class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-light-gray-2"
+    >
+      <div
+        class="flex h-full w-full max-w-80 flex-col gap-6 px-4 py-12 md:max-w-96 md:pb-32"
+      >
+        <h1 class="text-2xl font-medium text-black md:text-3xl">
+          Frequently asked questions
+        </h1>
+        <span class="h-px w-full bg-black"></span>
+        <ul class="flex flex-col gap-6">
+          <button
+            class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg"
+          >
+            <div
+              class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between"
+            >
+              <h3 class="text-lg">Useful Information</h3>
+              <i>
+                <i class="fa-solid fa-plus fa-lg"></i>
+                <i class="fa-solid fa-minus fa-lg hidden"></i>
+              </i>
+            </div>
+            <div class="faqcontent | hidden">
+              <div class="flex flex-col gap-6">
+                <span class="h-px w-full bg-white"></span>
+                <p class="cursor-text text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eaque non similique expedita cumque temporibus natus eum omnis
+                  placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
+                  consequatur et nesciunt!
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg"
+          >
+            <div
+              class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between"
+            >
+              <h3 class="text-lg">Useful Information</h3>
+              <i>
+                <i class="fa-solid fa-plus fa-lg"></i>
+                <i class="fa-solid fa-minus fa-lg hidden"></i>
+              </i>
+            </div>
+            <div class="faqcontent | hidden">
+              <div class="flex flex-col gap-6">
+                <span class="h-px w-full bg-white"></span>
+                <p class="cursor-text text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eaque non similique expedita cumque temporibus natus eum omnis
+                  placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
+                  consequatur et nesciunt!
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg"
+          >
+            <div
+              class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between"
+            >
+              <h3 class="text-lg">Useful Information</h3>
+              <i>
+                <i class="fa-solid fa-plus fa-lg"></i>
+                <i class="fa-solid fa-minus fa-lg hidden"></i>
+              </i>
+            </div>
+            <div class="faqcontent | hidden">
+              <div class="flex flex-col gap-6">
+                <span class="h-px w-full bg-white"></span>
+                <p class="cursor-text text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eaque non similique expedita cumque temporibus natus eum omnis
+                  placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
+                  consequatur et nesciunt!
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg"
+          >
+            <div
+              class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between"
+            >
+              <h3 class="text-lg">Useful Information</h3>
+              <i>
+                <i class="fa-solid fa-plus fa-lg"></i>
+                <i class="fa-solid fa-minus fa-lg hidden"></i>
+              </i>
+            </div>
+            <div class="faqcontent | hidden">
+              <div class="flex flex-col gap-6">
+                <span class="h-px w-full bg-white"></span>
+                <p class="cursor-text text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eaque non similique expedita cumque temporibus natus eum omnis
+                  placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
+                  consequatur et nesciunt!
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg"
+          >
+            <div
+              class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between"
+            >
+              <h3 class="text-lg">Useful Information</h3>
+              <i>
+                <i class="fa-solid fa-plus fa-lg"></i>
+                <i class="fa-solid fa-minus fa-lg hidden"></i>
+              </i>
+            </div>
+            <div class="faqcontent | hidden">
+              <div class="flex flex-col gap-6">
+                <span class="h-px w-full bg-white"></span>
+                <p class="cursor-text text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eaque non similique expedita cumque temporibus natus eum omnis
+                  placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
+                  consequatur et nesciunt!
+                </p>
+              </div>
+            </div>
+          </button>
+        </ul>
+      </div>
+
+      <svg
+        class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          class="fill-black"
+          d="M0,96L80,85.3C160,75,320,53,480,48C640,43,800,53,960,53.3C1120,53,1280,43,1360,37.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        />
+      </svg>
+    </div>
+
+    <footer
+      class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-black"
+    >
+      <div
+        class="flex h-full w-full max-w-5xl flex-col items-center justify-between px-12 pb-8 pt-12"
+      >
+        <i class="place-self-start">
+          <svg class="h-10 fill-light-gray-1" viewBox="0 0 797.43 647.04">
+            <path
+              d="M786.41,48.16c-4.05-9.1-12.5-27.44-31.74-38.77-15.85-9.34-36.4-11.45-38.22-7.42-.73,1.61,1.81,3.59,8.29,11.6,0,0,1.67,2.07,12.81,17.49,9.1,12.6,12.29,50.22-5.7,77.58-17.1,25.99-45.29,32.98-74.78,40.3-17.88,4.44-61.82,14.81-116.33,2.49-48.23-10.9-71.31-32.02-114.02-23.62-12.27,2.41-21.91,6.42-28.01,9.36-6.11-2.94-15.74-6.95-28.01-9.36-42.71-8.39-65.79,12.72-114.02,23.62-54.51,12.32-98.44,1.95-116.33-2.49-29.49-7.32-57.68-14.31-74.78-40.3-17.86-27.15-15.36-64.98-5.7-77.58,4.53-5.92,8.74-12.07,13.41-17.87,6.29-7.82,8.39-9.69,7.69-11.22-1.9-4.12-22.49-1.86-38.22,7.42-19.24,11.34-27.69,29.68-31.74,38.77-13.02,29.25-17.43,72.43,3.21,110.69,17.08,31.64,44.01,46.41,64.46,57.62,10.21,5.6,31.46,16.99,61.04,21.11,31.76,4.42,55.66-1.99,56.47,1.71.73,3.34-18.97,7.17-45.09,22.4-36.51,21.29-47.25,42.52-50.18,48.9-1.58,3.45-10.93,23.84-3.99,30.23,5.55,5.12,15.53-4.26,37.08-7.42,27.47-4.03,32.76,8.05,53.62,1.76,20.88-6.29,33.63-23.83,35.37-26.29,9.58-13.54,10.22-25.39,13.69-25.1,3.31.28,5.15,11.25,8.56,43.92,4.65,44.6,3.49,45.98,6.28,57.05,4.43,17.59,9.22,21.48,25.1,53.05,16.69,33.18,25.04,49.77,27.27,60.91,9.47,47.26-20.01,68.42-2.74,104.52,2.21,4.63,9.38,19.61,25.1,29.09,10.69,6.45,19.55,8.58,35.37,11.41,29.54,5.29,55,3.43,74.15,0,15.81-2.83,24.68-4.96,35.37-11.41,15.72-9.48,22.89-24.47,25.1-29.09,17.27-36.09-12.2-57.26-2.74-104.52,2.23-11.15,10.58-27.74,27.27-60.91,15.88-31.57,20.67-35.46,25.1-53.05,2.78-11.06,1.62-12.44,6.28-57.05,3.41-32.68,5.25-43.65,8.56-43.92,3.47-.29,4.11,11.56,13.69,25.1,1.74,2.46,14.49,20,35.37,26.29,20.86,6.29,26.15-5.79,53.62-1.76,21.55,3.16,31.53,12.53,37.08,7.42,6.94-6.4-2.41-26.79-3.99-30.23-2.93-6.39-13.67-27.61-50.18-48.9-26.12-15.23-45.82-19.06-45.09-22.4.81-3.71,24.71,2.7,56.47-1.71,29.58-4.11,50.83-15.51,61.04-21.11,20.45-11.21,47.38-25.97,64.46-57.62,20.64-38.25,16.23-81.43,3.21-110.69Z"
+            />
+          </svg>
+        </i>
+
+        <div
+          class="mt-12 flex w-full justify-between text-left text-light-gray-2"
+        >
+          <div class="flex w-1/2 flex-col md:flex-row">
+            <a href="../home/index.html" class="w-24 hover:text-white md:w-1/2"
+              >Home</a
+            >
+            <a
+              href="../about-us/about-us.html"
+              class="mt-4 w-24 hover:text-white md:mt-0 md:w-1/2"
+            >
               About Us
             </a>
-            <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
-              Menu
-            </a>
-            <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
+          </div>
+          <div class="flex w-1/2 flex-col md:flex-row">
+            <a href="../menu/menu.html" class="w-24 hover:text-white md:w-1/2"
+              >Menu</a
+            >
+            <a href="#" class="mt-4 w-24 hover:text-white md:mt-0 md:w-1/2">
               Contact Us
             </a>
           </div>
-
-          <button class="hamburger | relative space-y-2 p-2 md:hidden">
-            <span class="duration-250 block h-0.5 w-7 bg-white transition-all"></span>
-            <span class="block h-0.5 w-7 bg-white"></span>
-            <span class="duration-250 block h-0.5 w-7 bg-white transition-all"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="curtain-content | invisible absolute top-1/3 flex flex-col space-y-8 text-xl text-white transition-colors duration-100 hover:text-white/75">
-      <a href="../about-us/about-us.html" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
-        About Us
-      </a>
-      <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
-        Menu
-      </a>
-      <a href="#" class="p-1.5 font-semibold transition-colors duration-100 hover:text-white">
-        Contact Us
-      </a>
-    </div>
-  </nav>
-
-  <section class="contact-us-hero | flex h-screen w-full justify-center bg-cover bg-center">
-    <a href="#contact-form"
-      class="absolute bottom-52 flex h-16 w-16 items-center justify-center rounded-2xl bg-black text-white shadow-xl md:bottom-60">
-      <i class="fa-solid fa-arrow-down fa-xl"></i>
-    </a>
-    <div class="absolute bottom-0 flex h-32 w-full flex-col items-center justify-between bg-black py-7 md:h-40 md:py-9">
-      <h3 class="font-serif text-xl tracking-wide text-white md:text-3xl">
-        Gordon’s Grill
-      </h3>
-      <h1 class="text-3xl font-light tracking-widest text-secondary md:text-5xl">
-        Get in touch
-      </h1>
-    </div>
-  </section>
-
-  <div id="contact-form" class="relative flex w-screen items-center justify-center overflow-hidden bg-white">
-    <div class="z-10 flex h-full w-full max-w-7xl flex-col items-center px-4 py-12 md:px-8">
-      <form class="h-full w-full max-w-72">
-        <input type="text" id="contact-fname"
-          class="block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
-          placeholder="First Name" required />
-        <input type="text" id="contact-lname"
-          class="mt-6 block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
-          placeholder="Last Name" required />
-        <input type="email" id="contact-email"
-          class="mt-6 block w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
-          placeholder="example@domain.com" required />
-        <textarea id="contact-content"
-          class="mt-6 block max-h-52 min-h-52 w-full rounded-lg border border-gray bg-white p-2 text-black focus:outline-secondary"
-          rows="8" placeholder="..." required></textarea>
-        <button id="contact-submit" class="mt-6 h-9 w-28 rounded-lg bg-secondary">
-          Submit
-        </button>
-      </form>
-    </div>
-
-    <svg class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
-      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path class="fill-light-gray-1"
-        d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,90.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-      </path>
-    </svg>
-  </div>
-
-  <div class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-light-gray-1">
-    <div class="z-10 flex h-full w-full max-w-80 flex-col gap-6 px-4 py-12 md:max-w-2xl md:flex-row md:py-32">
-      <iframe class="aspect-5/4 w-full rounded-2xl"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2164.126765321121!2d-2.1028299225333833!3d57.15198997363413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48840e17e7a14d39%3A0x39654090a0587f05!2sNorth%20East%20Scotland%20College!5e0!3m2!1sen!2suk!4v1732886504612!5m2!1sen!2suk"
-        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="flex h-min w-full max-w-36 flex-col gap-6 rounded-xl bg-black p-1.5 text-white">
-        <ul>
-          <li>Address</li>
-          <li>Suburb</li>
-          <li>City, Country</li>
-          <li>Postcode</li>
-        </ul>
-        <ul>
-          <li>Email</li>
-          <li>Phone Number</li>
-        </ul>
-      </div>
-    </div>
-
-    <svg class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
-      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path class="fill-light-gray-2"
-        d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,90.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-      </path>
-    </svg>
-  </div>
-
-  <div class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-light-gray-2">
-    <div class="flex h-full w-full max-w-80 flex-col gap-6 px-4 py-12 md:max-w-96 md:pb-32">
-      <h1 class="text-2xl font-medium text-black md:text-3xl">
-        Frequently asked questions
-      </h1>
-      <span class="h-px w-full bg-black"></span>
-      <ul class="flex flex-col gap-6">
-        <button
-          class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg">
-          <div class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between">
-            <h3 class="text-lg">Useful Information</h3>
-            <i>
-              <i class="fa-solid fa-plus fa-lg"></i>
-              <i class="fa-solid fa-minus fa-lg hidden"></i>
-            </i>
-          </div>
-          <div class="faqcontent | hidden">
-            <div class="flex flex-col gap-6">
-              <span class="h-px w-full bg-white"></span>
-              <p class="cursor-text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eaque non similique expedita cumque temporibus natus eum omnis
-                placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
-                consequatur et nesciunt!
-              </p>
-            </div>
-          </div>
-        </button>
-        <button
-          class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg">
-          <div class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between">
-            <h3 class="text-lg">Useful Information</h3>
-            <i>
-              <i class="fa-solid fa-plus fa-lg"></i>
-              <i class="fa-solid fa-minus fa-lg hidden"></i>
-            </i>
-          </div>
-          <div class="faqcontent | hidden">
-            <div class="flex flex-col gap-6">
-              <span class="h-px w-full bg-white"></span>
-              <p class="cursor-text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eaque non similique expedita cumque temporibus natus eum omnis
-                placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
-                consequatur et nesciunt!
-              </p>
-            </div>
-          </div>
-        </button>
-        <button
-          class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg">
-          <div class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between">
-            <h3 class="text-lg">Useful Information</h3>
-            <i>
-              <i class="fa-solid fa-plus fa-lg"></i>
-              <i class="fa-solid fa-minus fa-lg hidden"></i>
-            </i>
-          </div>
-          <div class="faqcontent | hidden">
-            <div class="flex flex-col gap-6">
-              <span class="h-px w-full bg-white"></span>
-              <p class="cursor-text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eaque non similique expedita cumque temporibus natus eum omnis
-                placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
-                consequatur et nesciunt!
-              </p>
-            </div>
-          </div>
-        </button>
-        <button
-          class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg">
-          <div class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between">
-            <h3 class="text-lg">Useful Information</h3>
-            <i>
-              <i class="fa-solid fa-plus fa-lg"></i>
-              <i class="fa-solid fa-minus fa-lg hidden"></i>
-            </i>
-          </div>
-          <div class="faqcontent | hidden">
-            <div class="flex flex-col gap-6">
-              <span class="h-px w-full bg-white"></span>
-              <p class="cursor-text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eaque non similique expedita cumque temporibus natus eum omnis
-                placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
-                consequatur et nesciunt!
-              </p>
-            </div>
-          </div>
-        </button>
-        <button
-          class="faqbtn | z-10 flex min-h-10 w-full cursor-default flex-col items-center justify-between gap-6 rounded-lg border-2 border-light-gray-2 bg-black p-2 text-left text-white shadow-lg">
-          <div class="faqHdr | flex h-full max-h-10 w-full cursor-pointer items-center justify-between">
-            <h3 class="text-lg">Useful Information</h3>
-            <i>
-              <i class="fa-solid fa-plus fa-lg"></i>
-              <i class="fa-solid fa-minus fa-lg hidden"></i>
-            </i>
-          </div>
-          <div class="faqcontent | hidden">
-            <div class="flex flex-col gap-6">
-              <span class="h-px w-full bg-white"></span>
-              <p class="cursor-text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eaque non similique expedita cumque temporibus natus eum omnis
-                placeat esse amet fugiat sunt maiores voluptate, itaque, saepe
-                consequatur et nesciunt!
-              </p>
-            </div>
-          </div>
-        </button>
-      </ul>
-    </div>
-
-    <svg class="absolute bottom-0 left-0 z-0 w-screen drop-shadow-xl md:-bottom-16 lg:-bottom-32 xl:-bottom-44"
-      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path class="fill-black"
-        d="M0,96L80,85.3C160,75,320,53,480,48C640,43,800,53,960,53.3C1120,53,1280,43,1360,37.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" />
-    </svg>
-  </div>
-
-  <footer class="relative -mt-1 flex w-screen items-center justify-center overflow-hidden bg-black">
-    <div class="flex h-full w-full max-w-5xl flex-col items-center justify-between px-12 pb-8 pt-12">
-      <i class="place-self-start">
-        <svg class="h-10 fill-light-gray-1" viewBox="0 0 797.43 647.04">
-          <path
-            d="M786.41,48.16c-4.05-9.1-12.5-27.44-31.74-38.77-15.85-9.34-36.4-11.45-38.22-7.42-.73,1.61,1.81,3.59,8.29,11.6,0,0,1.67,2.07,12.81,17.49,9.1,12.6,12.29,50.22-5.7,77.58-17.1,25.99-45.29,32.98-74.78,40.3-17.88,4.44-61.82,14.81-116.33,2.49-48.23-10.9-71.31-32.02-114.02-23.62-12.27,2.41-21.91,6.42-28.01,9.36-6.11-2.94-15.74-6.95-28.01-9.36-42.71-8.39-65.79,12.72-114.02,23.62-54.51,12.32-98.44,1.95-116.33-2.49-29.49-7.32-57.68-14.31-74.78-40.3-17.86-27.15-15.36-64.98-5.7-77.58,4.53-5.92,8.74-12.07,13.41-17.87,6.29-7.82,8.39-9.69,7.69-11.22-1.9-4.12-22.49-1.86-38.22,7.42-19.24,11.34-27.69,29.68-31.74,38.77-13.02,29.25-17.43,72.43,3.21,110.69,17.08,31.64,44.01,46.41,64.46,57.62,10.21,5.6,31.46,16.99,61.04,21.11,31.76,4.42,55.66-1.99,56.47,1.71.73,3.34-18.97,7.17-45.09,22.4-36.51,21.29-47.25,42.52-50.18,48.9-1.58,3.45-10.93,23.84-3.99,30.23,5.55,5.12,15.53-4.26,37.08-7.42,27.47-4.03,32.76,8.05,53.62,1.76,20.88-6.29,33.63-23.83,35.37-26.29,9.58-13.54,10.22-25.39,13.69-25.1,3.31.28,5.15,11.25,8.56,43.92,4.65,44.6,3.49,45.98,6.28,57.05,4.43,17.59,9.22,21.48,25.1,53.05,16.69,33.18,25.04,49.77,27.27,60.91,9.47,47.26-20.01,68.42-2.74,104.52,2.21,4.63,9.38,19.61,25.1,29.09,10.69,6.45,19.55,8.58,35.37,11.41,29.54,5.29,55,3.43,74.15,0,15.81-2.83,24.68-4.96,35.37-11.41,15.72-9.48,22.89-24.47,25.1-29.09,17.27-36.09-12.2-57.26-2.74-104.52,2.23-11.15,10.58-27.74,27.27-60.91,15.88-31.57,20.67-35.46,25.1-53.05,2.78-11.06,1.62-12.44,6.28-57.05,3.41-32.68,5.25-43.65,8.56-43.92,3.47-.29,4.11,11.56,13.69,25.1,1.74,2.46,14.49,20,35.37,26.29,20.86,6.29,26.15-5.79,53.62-1.76,21.55,3.16,31.53,12.53,37.08,7.42,6.94-6.4-2.41-26.79-3.99-30.23-2.93-6.39-13.67-27.61-50.18-48.9-26.12-15.23-45.82-19.06-45.09-22.4.81-3.71,24.71,2.7,56.47-1.71,29.58-4.11,50.83-15.51,61.04-21.11,20.45-11.21,47.38-25.97,64.46-57.62,20.64-38.25,16.23-81.43,3.21-110.69Z" />
-        </svg>
-      </i>
-
-      <div class="mt-12 flex w-full justify-between text-left text-light-gray-2">
-        <div class="flex w-1/2 flex-col md:flex-row">
-          <a href="../home/index.html" class="w-24 hover:text-white md:w-1/2">Home</a>
-          <a href="../about-us/about-us.html" class="mt-4 w-24 hover:text-white md:mt-0 md:w-1/2">
-            About Us
-          </a>
-        </div>
-        <div class="flex w-1/2 flex-col md:flex-row">
-          <a href="#" class="w-24 hover:text-white md:w-1/2">Menu</a>
-          <a href="#" class="mt-4 w-24 hover:text-white md:mt-0 md:w-1/2">
-            Contact Us
-          </a>
-        </div>
-      </div>
-
-      <span class="my-6 h-px w-full bg-gray"></span>
-
-      <div class="flex w-full flex-col justify-between text-gray md:flex-row-reverse md:items-center">
-        <div class="flex h-7 w-28 items-center justify-between">
-          <a href="#">
-            <i class="fa-brands fa-facebook fa-xl hover:text-white"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-xl hover:text-white"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-x-twitter fa-xl hover:text-white"></i>
-          </a>
         </div>
 
-        <p class="mt-6 text-sm md:mt-0">
-          © 2024 Gordon's Grill, Inc. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
+        <span class="my-6 h-px w-full bg-gray"></span>
 
+        <div
+          class="flex w-full flex-col justify-between text-gray md:flex-row-reverse md:items-center"
+        >
+          <div class="flex h-7 w-28 items-center justify-between">
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook fa-xl hover:text-white"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram fa-xl hover:text-white"></i>
+            </a>
+            <a href="https://www.x.com/">
+              <i class="fa-brands fa-x-twitter fa-xl hover:text-white"></i>
+            </a>
+          </div>
+
+          <p class="mt-6 text-sm md:mt-0">
+            © 2024 Gordon's Grill, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

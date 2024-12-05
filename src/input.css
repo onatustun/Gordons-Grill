@@ -66,4 +66,8 @@
   .contact-us-hero {
     background-image: url(/dist/contact-us/media/location-hero.jpg);
   }
+
+  .menu-hero {
+    background-image: url(/dist/menu/media/menu-hero.jpg);
+  }
 }
